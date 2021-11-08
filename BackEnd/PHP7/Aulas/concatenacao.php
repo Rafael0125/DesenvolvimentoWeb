@@ -9,7 +9,7 @@
             $nome = 'Rafael';
             $cor = 'Azul';
             $idade = 24;
-            $atividade = 'comer cu de curioso';
+            $atividade = 'desenvolver';
             echo 'Ola ' . $nome .  ', sua cor favorita é '. $cor . ' ,você tem ' . $idade . ' anos de idade e sua atividade favorita é ' .$atividade. '.' ;     
         ?>
         <br/>
@@ -23,7 +23,7 @@
             $nome = 'Rafael';
             $cor = 'Azul';
             $idade = 24;
-            $atividade = 'comer cu de curioso';
+            $atividade = 'desenvolver';
             echo "Ola $nome, sua cor favorita é $cor, você tem $idade de idade e sua atividade favorita é $atividade"      
         ?>
         <br/>
