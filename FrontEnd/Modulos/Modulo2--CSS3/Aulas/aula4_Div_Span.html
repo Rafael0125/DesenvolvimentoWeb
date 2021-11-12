@@ -1,111 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+<!--
+    <div></div> == Serve para dividir o conteudo da pagina para que cada bloco dividido tenha uma formatação CSS diferente dos outros. Usando classes e id's para formatar o conteudo. 
+
+    <span></span> == É usado para formatar uma linha ou uma parte menor que a div
+
+    Usando a DIV os elementos ficam um abaixo do outro.
+    Usando o SPAN os elementos são editados como um texto normal, um na frente do outro.
+
+-->    
+
     <meta charset="UTF-8">
     <title>Div e Span</title>
-
-    <style type="text/css">
+    
+    <style type="text/css"> /* <style> usado para fazer formatações dos id que compoem o "topo" da pagina.  */
         #topo{
+            background: green;
+            color: white;
+        }
+        #menu{
+            background: purple ;
+        }           
+    </style> <!-- Como serão os unicos formatados dessa maneira criei um ID para cada um. -->
+
+    <style type="text/css"> /* style usado para formatar o conteudo onde aparece os produtos da pagina*/
+        #conteudo{ 
+            background: red;
+        }
+        .produtos{ /* Usando agr classes pois tera mais de um elemento usando essa formatação. */ 
             background: gray;
-        }
-        #conteudo{
-            background: blue;
-            color: red;
-           
-        }
-        .produto{
-            color:blue;
-            background: yellow;
-            margin: 10px;
+            margin: 5px; /* Usado para editar as margens das div's */
         }
     </style>
+    <style type="text/css"> /* Edição do rodape da pagina*/
 
-    <style type="text/css">
         #rodape{
             background: pink;
+            color: blue ;
         }
+        
         #editor{
-            background: grey;
+            background: black;
+            color: white;
         }
-        #ultimo{
-            background: indigo;
-        }
+
+        
     </style>
+
+
+
+
+
 
 </head>
 <body>
 
-    <h1>Div e Span</h1>
+    <h1>Div e Span</h1> <br>
+    <hr>
 
-    <div id="topo">
-        <img src="imagens/logoAmazon2.png" width="200">
-        <ul>
-            <li>home</li>
-            <li>produtos</li>
-            <li>Contato</li>
-        </ul>
+    <div id="topo" align='center'>
+        <table border="1" bordercolor= yellow>
+            <tr>
+                <td>
+                    <img src="imagens/logoAmazon2.png" width="250"  >
+                </td>
+            </tr>
+        </table>
+
+        <h3><span id="menu"> Home &nbsp; Produtos &nbsp; Contato </span></h3>
+
+                
     </div>
+
     <div id="conteudo">
-
-        <ol>
-            <li> Conteudo</li>  
-            <li> Conteudo</li> 
-            <li> Conteudo</li>           
-        </ol>
-    </div>
-    <div class="produto">
-
-        <ul>
-            <li> produto</li>  
-            <li> produto</li> 
-            <li> produto</li>           
-        </ul>
-    </div>
-
-    <div class="produto">
-        <div id="conteudo">
-
-            <ol>
-                <li> Divisão</li>  
-                <li> Conteudo</li> 
-                <li> Conteudo</li>           
-            </ol>
+        <div class="produtos">
+            Produto 1
         </div>
-        <div id="conteudo">
-            <div class="produto">
-    
-            <ul>
-                <li> produto</li>                         
-            </ul>
-            </div>
-
-            <div class="produto">
-    
-                <ul>
-                    <li> produto</li>                         
-                </ul>
-            </div>
-            <div class="produto">
-    
-                    <ul>
-                        <li> produto</li>                         
-                    </ul>
-            </div>
-
+        <div class="produtos">
+            Produto 2
+        </div>
+        <div class="produtos">
+            Produto 3
         </div>
     </div>
 
-
-    <div id="rodape">
-        <h4>Todos os direitos reservados</h4>
+    <br>
+    <div id="rodape" align='center'>
+       <strong> Todos os direitos reservados </strong>
     </div>
 
-    <span id="editor">
-        Rafael Navarro      
-    </span>
-    <span id="ultimo">
-        span
-    </span>
+    <p align='center'>
+    <span id="editor"> Rafael Araujo Navarro</span>
+    </p>
+   
 
 
 
