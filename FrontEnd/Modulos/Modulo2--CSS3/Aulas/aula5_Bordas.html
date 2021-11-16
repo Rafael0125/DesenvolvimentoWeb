@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Bordas</title>
+    
+    <style type="text/css"> 
+
+
+        /* Podemos usar as bordas em praticamente todos os elementos HTML
+            No 'border' a primeira informação é a espesura da borda; "1px"
+            A segunda é o tipo de borda; "Solid";
+            E a terceira é a cor; "red";
+
+        #conteudo{ 
+            Declarando as bordas do elemento com ID #conteudo. 
+
+                border: 15px solid  red; //Borda reta 
+                border: 15px dotted red; //Borda pontilhada 
+                border: 15px dashed red; //Borda tracejada 
+                border: 15px double red; //Borda dupla 
+                border: 15px groove red; //Borda com efeito 3D
+                border: none; // Sem borda
+                border: hidden // Borda escondida
+
+        }*/
+
+        /* Podemos tambem definir de outra maneita*/
+
+        #conteudo{
+            border-color: red gray yellow blue; 
+            /* Definindo a cor de cada borda, comeca a partir da parte de cima e vai girando em sentido horario e a mesma coisa acontece com o estilo e tamanho das borda */
+            border-width: 20px 15px 25px 10px; /* Definindo a espesura da borda */
+            border-style: double  solid; /* Definindo o estilo da borda */
+
+            /*
+                Podemos tambem definir apenas dois valores como no 'border-style';
+                Quando definimos apenas dois valores, o primeiro configura as bordas de cima e em baixo e o segundo valor as bordas laterais;
+                O mesmo acontece com as outras propriedades.
+            */
+
+        }
+
+
+
+
+        
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <div id="conteudo">
+
+        Bordas <br>
+        Bordas <br>
+        Bordas <br>
+
+    </div>
+
+    
+    
+</body>
+</html>

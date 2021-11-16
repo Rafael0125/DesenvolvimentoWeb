@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Edição de texto</title>
+    <!--
+        Aulas de Formatação de texto
+            //Aula6_Fontes e Cores
+                // Podemos usar sites para gerar um codigo hexadecimal para representar uma cor '#31B404';
+                // Podemos encontar o código hexadecimal na internet
+                // Podemos usar as formatações nos titulos com h1;h2;etc.
+
+            //Aula7_Tamanhos de Textos
+                //Formatações de tamanho de texto
+                    px == Tamanho Fixo
+                    % == Tamanho relativo // É relativo ao tamanho padrao do browser
+                    em == Tamanho relativo ao conteiner pai // Mais recomendado
+
+            //Aula8_Estilos de Textos
+                //
+
+
+
+
+
+    -->
+
+    <style type="text/css">
+        /* //Aula6_Fontes e Cores
+
+        .formatacao{
+            color: blue;  Definindo a cor do conteudo da classe
+            color: #31B404; /* Usando um codigo hexadecimal para definir a cor do conteudo da classe
+            font-size: 30px;  Definindo o tamanho da fonte
+            background: blue; Definindo o background
+            font-family: Arial, Helvetica, sans-serif; /* Para editar a familia da font, exemplo : 'arial' 
+
+        }*/
+
+        /* //Aula7_Tamanhos de Textos
+
+        div{ // "Conteiner Pai" 
+            font-size: 35px;
+        }
+        .texto{ // Conteiner Filho
+            font-size: 2em;
+        }
+        .texto2{ // Conteiner Filho
+            font-size: 1.5em; // Usamos o ponto para definir os valores 'depois da virgula' 
+        }*/
+
+        /* //Aula8_Estilos de Textos
+        
+        body{
+            font-size: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .negrito{
+            font-weight: bold; // 'font-weight' == Usamos para definir se nosso texto vai ficar em negrito podemos usr numeros de 100 até 900 para a definição tambem
+        }
+        .italico{
+            font-style: italic;
+        }
+        .underline{
+            text-decoration: underline ; // 'text-decoration' Nos permite colocar algumas formatações no nosso texto 
+        }
+        .overline{
+            text-decoration: overline ;
+
+        }
+        .linethrough{
+            text-decoration: line-through;
+        }
+        .texto{ // Podemos agrupar todos os estilos de texto em uma unica propriedade
+            font: italic  40px Georgia, 'Times New Roman', Times, serif ;
+
+        }
+        */
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <p class="negrito">Conteudo em Negrito</p>
+        <p class="italico">Conteudo Italico</p>
+        <p class="underline">Conteudo com linha em baixo</p>
+        <p class="overline">Conteudo com linha em cima</p>
+        <p class="linethrough">Conteudo com linha no meio</p>
+        <p class="texto" >Conteudo com varias formatações</p>
+    </div>
+
+    
+</body>
+</html>
