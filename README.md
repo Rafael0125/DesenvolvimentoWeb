@@ -106,4 +106,4 @@ ______
 
 
 ###### Rafael Araujo Navarro
-###### Estudante de Desenvolvimento Web
+###### Estudante autônomo de Desenvolvimento Web
