@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cor e Imagem de fundo</title>
+
+        <style type="text/css">
+
+        /*  
+            'background-image' == Comando para adicionar imagens ao fundo da   página;
+
+            'background-repeat' == Comando para controlar a repetição das imagens de fundo;
+
+            'background-attachment' == Comando para fazer o posicionamento da imagem de fundo de acordo com  o rolamento da página;
+
+            'background-position' == Comando para posicionar a imagem de fundo nos lugares da tela, exemplo no meio ou nas laterais;
+
+            O primeiro valor formata a posição horizontal da imagem o segundo na vertical;
+            
+            Valores na horizontal : left, center, right
+            Valores na vertical : top, center, bottom;
+
+            Podemos tambem adicionar imagens no 'h1' tambem;   
+
+            É possivel formatar os valores de uma vez usando o 'background';
+            Sendo que no primeiro parametro podemos definir a cor de fundo e imagem;
+            O segundo parametro é para a repetição da imagem;
+            O terceiro parametro é para attachment;
+            O quarto parametro é para a posição da imagem
+            */
+
+            .fundo{
+                background: blue url(imagens/logoAmazon2.png) no-repeat scroll left top;
+            }
+
+            /*h1{
+                background-image: url('imagens/yoshiquicando.png');
+                background-repeat:no-repeat;
+                background-attachment: fixed;
+                background-position:  left top ;            
+            }*/
+
+
+            p{
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body class="fundo">
+        <h1> Rafael Navarro</h1><br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus libero quam quo, cupiditate debitis nam architecto? Cupiditate quo itaque officiis quasi, consequatur soluta, ducimus, harum nemo facere enim nam amet!</p>
+        <br>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus libero quam quo, cupiditate debitis nam architecto? Cupiditate quo itaque officiis quasi, consequatur soluta, ducimus, harum nemo facere enim nam amet!</p>
+        <br>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus libero quam quo, cupiditate debitis nam architecto? Cupiditate quo itaque officiis quasi, consequatur soluta, ducimus, harum nemo facere enim nam amet!</p>
+    </body>
+</html>
