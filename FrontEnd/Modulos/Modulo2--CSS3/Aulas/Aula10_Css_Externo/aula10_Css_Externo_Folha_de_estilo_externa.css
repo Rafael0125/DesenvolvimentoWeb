@@ -1,0 +1,20 @@
+/*
+    Usamos o css de maneira externa para facilitar na formatação dos documentos;
+    Pois se estamos fazendo um projeto com mais de 20 páginas, por exemplo, não precisamos ir em página por página para fazer a formatação.
+
+*/
+
+
+
+
+
+
+
+
+
+
+.texto{
+    color: red;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}

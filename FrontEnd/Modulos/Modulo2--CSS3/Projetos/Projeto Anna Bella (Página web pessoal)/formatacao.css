@@ -1,0 +1,12 @@
+body{
+    background-image: url(imagens/fundo.png);
+}
+
+#capa{
+    background: url(imagens/capa.png) no-repeat scroll left top;
+
+}
+
+#menu{
+    background-color: gray;
+}
