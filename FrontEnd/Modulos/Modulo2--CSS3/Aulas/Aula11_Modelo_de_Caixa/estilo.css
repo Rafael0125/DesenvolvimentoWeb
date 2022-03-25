@@ -1,0 +1,96 @@
+/*
+    MODELO DE CAIXA:
+
+    As TAG's HTML se comportam em modelos de caixa;
+
+    Padding é usado para fazer espaçamentos interno do conteudo podendo ser aplicado em todos os lados;
+
+    Usando os comandos podemos formatar o espaçamento: 
+    padding-top: Para fazer o espaçamento em cima;
+    padding-right: À direita ;
+    padding-bottom: Em baixo
+    padding-left: À esquerda;
+
+    Podemos tambem fazer os espaçamentos de todos os lados juntos em um unico comando 'PADDING';
+
+    padding: 20px 15px 10px 15px;
+
+    Sendo que o primeiro atributo do padding é referente a parte de cima, o segundo à direita, o terceiro em baixo e o quarto atributo é referente à esquerda. Como as bordas do comando border que começa em cima e gira em sentido horario;
+
+    Atribuindo apenas um valor, exemplo:
+        padding: 20px,
+        Será configurado todos os lados com o valor do atributo;
+    
+    Atribuindo dois valores, exemplo:
+        padding: 20px 15px;
+        O primeiro valor será aplicado em cima e em baixo e o segundo valor será atribuido nas laterais;
+
+
+
+    Margin é o espaçamento externo entre os elementos, exemplo : quando temos duas div, podemos colocar o espaçamento entre elas;
+
+    Usando os comandos:
+
+    margin-top: para a margem de cima
+    margin-right: para a margem da direita;
+    margin-left: para a margem da esquerda;
+    margin-bottom: para a margem de baixo;
+
+    Podemos tambem usar o comando MARGIN para fazer a formatação seguindo o mesmo conceito do padding, começando por cima e girando em sentido horario até a esquerda, exemplo:
+        margin: 20px 15px 10px 25px;
+
+    Podemos tambem definir apenas um atributo para ser aplicado em todos os lado, exemplo: 
+        margin: 20px;
+    
+    E até mesmo aplicar dois atributos, onde o primeiro é referente a parte de cima e em baixo e o segundo é referente as laterais, exemplo:
+        margin: 20px 15px;
+
+    MARGIN-COLAPSE:
+        É quando temos dois elementos um a baixo do outro com margin diferente entre eles, a margin maior que se sobressai, exemplo:
+
+            .conteudo{ 
+                border: 1px solid red;
+                padding: 20px ;
+                width: 150px;        
+                margin: 20px;
+            }
+            .conteudo2{
+                border: 1px solid red;
+                width: 150px;
+                padding: 20px;
+                margin: 30px;
+            }
+        
+            No exemplo a cima a margin do conteudo2, que sera aplicada ja que é a maior.
+
+
+
+
+
+
+*/
+
+.conteudo{
+    border: 1px solid red;
+    /*padding-top: 20px;
+    padding-right: 20px ;
+    padding-left: 20px;
+    padding-bottom: 20px;*/
+    padding: 20px ;
+
+    width: 150px;
+
+    /*margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    */
+
+    margin: 20px;
+}
+.conteudo2{
+    border: 1px solid red;
+    width: 150px;
+    padding: 20px;
+    margin: 30px;
+}
