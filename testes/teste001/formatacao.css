@@ -1,0 +1,47 @@
+body{
+    background:url(imagens/fundo2.png) repeat;
+    
+}
+
+#fundo{
+    background: whitesmoke ;
+    float: left;
+    width: 900px;
+    border: 1px solid white;
+    margin-left: 250px;
+
+}
+
+
+
+#titulo{
+    color: wheat;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background: gray fixed top;
+    width: 898px;
+    border: 1px solid white;
+
+    
+}
+
+#conteudo{
+    width: 448px;
+    background: burlywood;
+    color: red;
+    float: left;
+    text-align: center;
+    border: 1px solid red;
+}
+
+
+#conteudo1{
+    width: 448px;
+    background: burlywood;
+    color: red;
+    float:right;
+    text-align: center;
+    border: 1px solid blue;
+
+}
