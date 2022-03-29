@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Posicionamento (static, relative, absolute e fixed) </title>
+
+        <style type="text/css">
+            body{
+                background: #007fc7;
+            }
+
+            #conteiner{
+                background: #FFF;
+                width: 800px;
+                margin: 10px auto;
+                padding: 10px;
+
+            }
+
+            p{
+                width: 300px;
+            }
+
+            .relative{
+                border: 1px solid red;
+                position:relative;
+                bottom: 130px;
+                left: 300px;
+            }/* Posicionamento relativo à posição inicial do elemento. */
+
+            .absolute{
+                border: 1px solid red;
+                background: #f2f2f2;
+                position: fixed;
+                top: 80px;
+                right: 80px;                
+            }/* Posicionamento fora do fluxo do documento em geral, sem afetar os elementos da página. */
+
+            .fixed{
+                border: 1px solid red;
+                background: #f2f2f2;
+                position: fixed;
+                top: 0px;
+                right:  0px;
+                margin: 0px;                
+            }/* Posicionamento fixo em relação a página toda. */
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="conteiner">
+            <h1> Posicionamento</h1>
+            <p> P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p class="fixed"> P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est itaque accusantium quos, tempora quod magnam omnis ab neque ad facere dignissimos mollitia architecto libero numquam cupiditate nemo ratione quae nostrum!</p>
+
+
+        </div>
+
+
+
+        
+    </body>
+
+</html>
