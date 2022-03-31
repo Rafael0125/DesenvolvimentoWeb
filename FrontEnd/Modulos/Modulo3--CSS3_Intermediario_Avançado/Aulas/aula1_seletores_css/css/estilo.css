@@ -1,0 +1,58 @@
+/* SELETOR UNIVERSAL
+
+*{
+    border: 1px solid red;
+}
+
+/* Seletores de texto
+h1{
+    color: red;
+}
+
+/* Seletor de classe 
+
+p.verde{ /* Essa classe so será aplicada em paragrafos por conta do 'p' na frente
+    color: green;
+}
+
+#cabecalho{
+    border: 1px solid blue;
+}*/
+
+
+/* Seletor filho
+
+li>a{
+    color: red;
+    text-decoration: none;
+}
+*/
+
+/* Seletor de descendente 
+
+li a {
+    color: red;
+    text-decoration: none;
+}
+*/
+
+/* Seletor de irmão adjacente
+
+h1+p{
+    color: red;
+}
+*/
+
+/* Seletor de irmão geral*/
+
+h1~p{
+    color: blue;
+}
+
+
+
+
+
+
+
+
