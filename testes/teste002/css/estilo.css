@@ -1,25 +1,42 @@
 
+   /* FORMATAÇÕES GERAIS */
+
 body{
-    background-color: rgb(84, 84, 175);
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
-    width: 920px;
     margin: 10px auto;
+    background: blanchedalmond;
 }
-/*
-    FORMATANDO O MENU SUPERIOR
-*/
+a{
+    text-decoration: none;
+}
+#conteudo{
+    background-color: grey;
+    width: 950px;
+    height: 425px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+h3, p{
+    text-align: center;
+}
+
+
+/*    FORMATANDO O MENU SUPERIOR */
 #menu{
-    background: rgba(136, 110, 110, 0.425);
+    background: grey;
     text-align: center; 
     padding:5px; 
     height: 30px;
-    line-height: 30px;   
+    line-height: 30px;  
+    width: 950px;
+    margin: 10px auto;
 }
 
 #menu a{
     text-decoration: none;
-    color: red;
+    color: white;
     font-size: 18px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 30px;
@@ -32,23 +49,75 @@ body{
 }
 
 /*
+    FORMATANDO A BARRA VERTICAL DIREITA
+*/
+
+#area-direita{
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin: 0px ;
+}
+
+.retangulo-superior-direita{
+    width: 310px;
+    height: 115px;
+    background: white;
+}
+
+.retangulo-inferior-direita{
+    width: 310px;
+    height: 260px;
+    background: white;
+}
+/*
+    BARRA CENTRAL
+*/
+#retangulo-central{
+    display: inline-block;
+    float: right;
+    background: white;
+    width: 280px;
+    height: 393px;
+    margin: 0px 20px;   
+}
+
+#gato{
+   width: 175px;
+    height: 175px;
+    margin: 15px 40px;
+}
+
+/*
     FORMATANDO A BARRA VERTICAL ESQUERDA
 */
 
-.retangulo-superior-esquerdo{
+
+#area-esquerda{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+
+}
+
+.retangulo-superior-esquerda{
+    top: 500px;
     width: 310px;
     height: 115px;
-    margin-top: 20px;
     background: white;
-    float: left top ;
 }
-.retangulo-inferior-esquerdo{
+
+.retangulo-inferior-esquerda{
     width: 310px;
-    height: 230px;
-    margin-top: 20px;
+    height: 260px;
     background: white;
-    position: relative;
-    float: right top ;
+}
+
+#grafico-imagem{
+    width: 128px;
+    height: 121px;
+    margin-left: 95px;
+    border: 1px solid rgba(204, 202, 202, 0.527);  
 }
 
 
