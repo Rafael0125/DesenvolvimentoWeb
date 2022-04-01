@@ -9,6 +9,10 @@ body{
 }
 a{
     text-decoration: none;
+    color:lightgreen;
+}
+a:hover{
+    color: red;
 }
 #conteudo{
     background-color: grey;
@@ -59,17 +63,16 @@ h3, p{
     margin: 0px ;
 }
 
-.retangulo-superior-direita{
+.retangulo-direita{
     width: 310px;
     height: 115px;
     background: white;
 }
-
-.retangulo-inferior-direita{
-    width: 310px;
-    height: 260px;
-    background: white;
+.retangulo-direita:hover{
+    background:rgba(253, 252, 176, 0.527);
+    color: aliceblue;
 }
+
 /*
     BARRA CENTRAL
 */
@@ -82,17 +85,19 @@ h3, p{
     margin: 0px 20px;   
 }
 
-#gato{
-   width: 175px;
-    height: 175px;
-    margin: 15px 40px;
+#retangulo-central:hover{
+    color: white;
+    background: black;   
 }
 
+#imagem-central{
+    width: 185px;
+    height: 185px;
+    margin: 0px 20px 5px 50px;
+}
 /*
     FORMATANDO A BARRA VERTICAL ESQUERDA
 */
-
-
 #area-esquerda{
     display: inline-block;
     position: relative;
@@ -107,10 +112,19 @@ h3, p{
     background: white;
 }
 
+.retangulo-superior-esquerda:hover{
+    background:rgba(253, 252, 176, 0.527);
+    color: aliceblue;
+}
+
 .retangulo-inferior-esquerda{
     width: 310px;
     height: 260px;
     background: white;
+}
+.retangulo-inferior-esquerda:hover{
+    color: white;
+    background: black;   
 }
 
 #grafico-imagem{
