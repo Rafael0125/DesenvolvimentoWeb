@@ -85,10 +85,6 @@ h3, p{
     margin: 0px 20px;   
 }
 
-#retangulo-central:hover{
-    color: white;
-    background: black;   
-}
 
 #imagem-central{
     width: 185px;
@@ -121,10 +117,6 @@ h3, p{
     width: 310px;
     height: 260px;
     background: white;
-}
-.retangulo-inferior-esquerda:hover{
-    color: white;
-    background: black;   
 }
 
 #grafico-imagem{
