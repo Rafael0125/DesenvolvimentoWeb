@@ -15,9 +15,21 @@ ul a{
     line-height: 40px;    
     background: #f7b600 url(imagens/menu.png) no-repeat left bottom;
 }
-a:hover, .selecionado a{
+a:hover {
     background-position: right bottom;
     background-color: #f99200;
+    color: #fff;
+}
+
+#home .home a,
+#sobre .sobre a,
+#servicos .servicos a,
+#noticias .noticias a,
+#contatos .contatos a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+
 }
 
 
