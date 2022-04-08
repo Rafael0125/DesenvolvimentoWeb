@@ -1,39 +1,80 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
 }
-
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+#container{
     width: 720px;
+    margin: 0 auto;
+    background: #fff;
 }
-
-ul li{
+#marca{
+    height: 100px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;
+}
+#conteudo{
+    width: 520px;
+    float: right;
+}
+#conteudo-principal{
+    width: 320px;
     float: left;
-    background: url(imagens/aba-direita.png) no-repeat top right;
 }
+#conteudo-secundario{
+    width: 180px;
+    float: right;
+    background: #d1d1d1;
+}
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+    padding-left: 20px;
+    padding-right: 20px;
 
-li a{
-    display: block;
-    padding: 0 2em;
-    line-height: 3em;
-    text-decoration: none;
-    background: url(imagens/aba-esquerda.png) no-repeat top left ;
-    color: #fff;
-}
-ul a:hover{
-    color: #894a1f;  
-}
-ul #atual{
-    background: url(imagens/aba-direita-atual.png) no-repeat top right;
 
 }
 
-ul #atual a{
-    background: url(imagens/aba-esquerda-atual.png) no-repeat top left ;
-}
 
-#clear{
+
+
+
+
+
+
+
+#navegacao{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+#rodape{
     clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+
+}
+
+#navegacao ul {
+    list-style-type: none;
+}
+#navegacao li a{
+    width: 90px;
+    height: 20px;
+    margin: 3px ;
+    padding: auto;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 15px;
+    line-height: 20px;    
+    background: #9E9E9E ;  
+}
+#navegacao li a:hover{
+    background:#c4c4c4;
+    border: 1px dotted #9E9E9E;
+    margin: 3px auto;
 }
