@@ -1,0 +1,641 @@
+/*               | AULA 01 == SELETORES CSS
+
+/* SELETOR UNIVERSAL
+
+*{
+    border: 1px solid red;
+}
+
+/* SELETORES DE TEXTO
+
+h1{
+    color: red;
+}
+
+/* SELETOR DE CLASSES
+
+p.verde{ ==== Essa classe so será aplicada em paragrafos por conta do 'p' na frente
+    color: green;
+}
+
+/* SELETOR DE ID's
+
+#cabecalho{
+    border: 1px solid blue;
+}
+
+/* SELETOR FILHO
+
+li>a{
+    color: red;
+    text-decoration: none;
+}
+
+/* SELETOR DE DESCENDENTE
+
+li a {
+    color: red;
+    text-decoration: none;
+}
+
+/* SELETOR DE IRMÃO ADJACENTE
+
+h1+p{
+    color: red;
+}
+
+/* SELETOR DE IRMÃO GERAL
+
+h1~p{
+    color: blue;
+}
+
+************************************************************************/
+
+/*               | AULA 02 == HERANÇA E ESPECIFICIDADE
+
+    Seletores iguais, exceção, important
+
+    #pagina p {
+        color: red important;
+    }
+
+    #pagina p {
+        color: blue;
+    }
+
+    /* Se um seletor for mais especifico que o outro 
+    a regra mais especifica será aplicada (terá precedencia sobre regras mais gerais)
+    
+
+    * {
+        color: red;
+    }
+    h2 { /*3
+        color: blue;
+    }
+
+    h2.verde { /*2
+        color: green;
+    }
+
+    h2#amarelo { /*1
+        color: yellow;
+    }
+
+************************************************************************/
+
+/*               | AULA 03 == BARRA DE NAVEGAÇÃO VERTICAL  
+
+    ul{
+        list-style-type:none ;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        padding:5px 20px;
+        background: url(imagens/seta.png) no-repeat left center;
+    }
+
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type:none;
+    }
+
+    ul a{    
+        border: 1px solid red;
+        width: 200px;
+        height: 40px;
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-indent: 40px;
+        line-height: 40px;    
+        background: url(imagens/menu.png) no-repeat left bottom;
+    }
+    a:hover{
+        background-position: right bottom;
+    }
+
+************************************************************************/
+
+/*               | AULA 04 == MARCANDO PÁGINA ATUAL
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type:none;
+    }
+
+    ul a{    
+        border: 1px solid red;
+        width: 200px;
+        height: 40px;
+        display: block;
+        color: #000;
+        text-decoration: none;
+        text-indent: 40px;
+        line-height: 40px;    
+        background: #f7b600 url(imagens/menu.png) no-repeat left bottom;
+    }
+    a:hover {
+        background-position: right bottom;
+        background-color: #f99200;
+        color: #fff;
+    }
+
+    #home .home a,
+    #sobre .sobre a,
+    #servicos .servicos a,
+    #noticias .noticias a,
+    #contatos .contatos a{
+        background-position: right bottom;
+        background-color: #f99200;
+        color: #fff;
+
+    }
+
+************************************************************************/
+
+/*               | AULA 05 == BARRA DE NAVEGAÇÃO HORIZONTAL
+
+    ul#navegacao{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 720px;
+        background: #159cb0 url(imagens/fundo-horizontal.png)  repeat-x;
+        float: left;
+    }
+
+    ul#navegacao li{
+        float: left;
+    }
+
+    ul#navegacao a{
+        display: block;
+        padding: 0 2em;
+        line-height: 2em;
+        text-decoration: none;
+        color: white;
+        background: url(imagens/divisor.png) repeat-y right;
+    }
+
+    ul#navegacao a:hover{
+        color: #085662;
+        background: #44cade;
+    }
+
+    #home .home a,
+    #sobre .sobre a,
+    #servicos .servicos a,
+    #noticias .noticias a,
+    #contatos .contatos a{
+        background-position: right bottom;
+        color: #085662;
+        background: #44cade;
+    }
+
+************************************************************************/
+
+/*               | AULA 06 == NAVEGAÇÃO COM ABAS
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+}
+
+ul li{
+    float: left;
+    background: url(imagens/aba-direita.png) no-repeat top right;
+}
+
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(imagens/aba-esquerda.png) no-repeat top left ;
+    color: #fff;
+}
+ul a:hover{
+    color: #894a1f;  
+}
+ul #atual{
+    background: url(imagens/aba-direita-atual.png) no-repeat top right;
+
+}
+
+ul #atual a{
+    background: url(imagens/aba-esquerda-atual.png) no-repeat top left ;
+}
+
+#clear{
+    clear: both;
+}
+
+************************************************************************/
+
+/*               | AULA 07 == LAYOUT DE LARGURA FIXA
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+#container{
+    width: 720px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#marca{
+    height: 100px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo{
+    width: 520px;
+    float: right;
+}
+
+#conteudo-principal{
+    width: 320px;
+    float: left;
+}
+
+#conteudo-secundario{
+    width: 180px;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#navegacao{
+    width: 180px;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+#navegacao ul {
+    list-style-type: none;
+}
+
+#navegacao li a{
+    width: 90px;
+    height: 20px;
+    margin: 3px ;
+    padding: auto;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 15px;
+    line-height: 20px;    
+    background: #9E9E9E ;  
+}
+
+#navegacao li a:hover{
+    background:#c4c4c4;
+    border: 1px dotted #9E9E9E;
+    margin: 3px auto;
+}
+
+************************************************************************/
+
+/*               | AULA 08 == LAYOUT LIQUIDO
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+#container{
+    border: 1px solid red;
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;   /* Controle para o largura minima do elemento//
+    max-width: 1280px;  /* Controle para o largura maxima do elemento//
+}
+
+#marca{
+    height: 100px;
+    background: #9E9E9E;
+    text-align: center;
+    line-height: 100px;
+}
+
+#conteudo{
+    border: 1px solid red;
+    width: 75%;
+    float: right;
+}
+
+#navegacao{
+    border: 1px solid red;
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#conteudo-principal{
+    border: 1px solid red;
+    width: 62%;
+    float: left;
+}
+
+#conteudo-secundario{
+    border: 1px solid red;
+    width: 33%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+#navegacao ul {
+    list-style-type: none;
+}
+
+#navegacao li a{
+    width: 85%;
+    height: 20px;
+    margin: 3px ;
+    padding: auto;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 15px;
+    line-height: 20px;    
+    background: #9E9E9E ;  
+}
+
+#navegacao li a:hover{
+    background:#c4c4c4;
+    border: 1px dotted #9E9E9E;
+    margin: 3px auto;
+}
+
+
+************************************************************************/
+
+/*               | AULA 09 == IMAGENS LIQUIDAS
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+    width: 85%;
+    min-width: 720px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #f1f1f1;
+}
+
+#marca{
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: #225992 url(imagens/cabecalho2.jpg) no-repeat center;
+    
+}
+
+#conteudo{
+    float: right;
+    width: 75%;
+}
+
+#navegacao{
+    border: 1px solid red;
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+#conteudo-principal{
+    border: 1px solid red;
+    width: 62%;
+    float: left;
+}
+
+img.img-noticia{
+
+    width: 94%;
+    padding: 3%;
+    max-width: 600px;
+}
+
+#conteudo-secundario{
+    border: 1px solid red;
+    width: 33%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style-type: none;
+}
+
+#navegacao li a{
+    width: 75%;
+    height: 20px;
+    margin: 3px ;
+    padding: auto;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 15px;
+    line-height: 20px;    
+    background: #9E9E9E ;  
+}
+
+#navegacao li a:hover{
+    background:#c4c4c4;
+    border: 1px dotted #9E9E9E;
+    margin: 3px auto;
+}
+
+************************************************************************/
+
+/*               | AULA 10 == COLUNA FALSA
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#container{
+    width: 960px;
+    min-width: 720px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #f1f1f1 url(imagens/coluna.png) repeat-y left top;
+}
+
+#marca{
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: #225992 url(imagens/cabecalho2.jpg) no-repeat center;
+    
+}
+
+#conteudo{
+    float: right;
+    width: 75%;
+}
+
+#navegacao{
+    width: 23%;
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+        background: #d1d1d1;
+}
+
+#rodape{
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
+
+#conteudo-principal{
+    width: 62%;
+    float: left;
+}
+
+img.img-noticia{
+
+    width: 94%;
+    padding: 3%;
+    max-width: 600px;
+}
+
+#conteudo-secundario{
+    width: 33%;
+    float: right;
+    background: #d1d1d1;
+}
+
+#navegacao ul {
+    list-style-type: none;
+}
+
+#navegacao li a{
+    width: 75%;
+    height: 20px;
+    margin: 3px ;
+    padding: auto;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 15px;
+    line-height: 20px;    
+    background: #9E9E9E ;  
+}
+
+#navegacao li a:hover{
+    background:#c4c4c4;
+    border: 1px dotted #9E9E9E;
+    margin: 3px auto;
+}
+
+************************************************************************/
+
+/*               | AULA 11 == ESTILIZANDO TABELAS
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+table{
+    width: 600px;
+    border-collapse: collapse;  ||||separate* |||| *Separação de bordas||||   
+}
+
+th, td{
+    padding: 7px;
+}
+
+th{
+    text-transform: uppercase;
+    border-top: 1px solid #999 ;
+    border-bottom: 1px solid #111;
+    text-align: left;
+    font-size: 90%;
+    letter-spacing: 0.1em; |||| Espaçamento entre as letras ||||
+}
+
+tr.alternado{
+    background-color: #efefef;
+
+}
+
+tr:hover{
+    background-color: #c3e6e5;
+}
+
+.numero{
+    text-align: right;
+}
+
+************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
