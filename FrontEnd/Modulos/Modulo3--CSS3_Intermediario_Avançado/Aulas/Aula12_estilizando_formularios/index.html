@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../00css/estilo.css">
+        <title>Estilizando Formularios</title>
+    </head>
+
+    <body>
+        <h2> Estilizando Formularios </h2>
+
+        <form action="">
+            <fieldset> <!-- UTILIZADOS PARA AGRUPAR DADOS SEMELHANTES -->
+                <legend> Detalhes de contato </legend> <!-- DA O TITULO DO FORMULARIO EM QUESTÃO-->
+
+                <div>
+                    <label for="nome">Nome:</label><!-- ETIQUETA OU ROTULO, USADO PARA IDENTIFICAR AS CAIXAS DE TEXTO -->
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label><!-- ETIQUETA OU ROTULO, USADO PARA IDENTIFICAR AS CAIXAS DE TEXTO -->
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="url">URL:</label><!-- ETIQUETA OU ROTULO, USADO PARA IDENTIFICAR AS CAIXAS DE TEXTO -->
+                    <input type="text" name="url" id="url">
+                </div>  
+
+            </fieldset>   
+
+            <fieldset>
+                <legend>Comentarios</legend>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" ></textarea>
+                </div>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Lembrar de mim</legend>
+                <div>
+                    <label >
+                        <input class="radio" type="radio" name="lembrar" id="sim"> Sim
+                    </label>
+                </div>
+
+                <div>
+                    <label >
+                        <input class="radio" type="radio" name="lembrar" id="nao"> Não
+                    </label>
+                </div>
+
+
+            </fieldset>
+
+
+
+        </form>
+
+
+
+        
+    </body>
+</html>

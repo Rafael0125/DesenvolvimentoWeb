@@ -627,7 +627,47 @@ tr:hover{
 
 ************************************************************************/
 
+/*               | AULA 12 == ESTILIZANDO FORMULARIOS */
 
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form{
+    width: 420px;
+}
+fieldset{
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+legend{
+    font-weight: bold;
+}
+label{
+    display: block;
+    cursor: pointer; /* MUDA O CURSOR DO MOUSE PARA A MÃOZINHA*/
+}
+input/*[type="text"]*/ { /* USANDO OS '["SELETOR DE ATRIBUTO"]' PODEMOS FORMATAR APENAS OS 'INPUT' QUE SEJAM DO TIPO 'TEXT'*/
+    width: 20em;
+}
+
+textarea{
+    width: 350px;
+    height: 10em;
+    max-width: 350px;
+    max-height: 125px;
+    min-width: 150px;
+    min-height: 100px;
+}
+
+input.radio, input.checkbox, input.submit{
+    width: auto;
+}
+
+.radio{
+    margin-right: 0.5em;
+}
 
 
 
