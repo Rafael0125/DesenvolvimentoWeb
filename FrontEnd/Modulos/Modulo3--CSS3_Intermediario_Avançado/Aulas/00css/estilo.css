@@ -627,28 +627,33 @@ tr:hover{
 
 ************************************************************************/
 
-/*               | AULA 12 == ESTILIZANDO FORMULARIOS */
+/*               | AULA 12  == ESTILIZANDO FORMULARIOS 
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 form{
     width: 420px;
 }
+
 fieldset{
     padding: 1em;
     margin: 1em 0;
     border: 1px solid #ccc;
     background: #f8f8f8;
 }
+
 legend{
     font-weight: bold;
 }
+
 label{
     display: block;
-    cursor: pointer; /* MUDA O CURSOR DO MOUSE PARA A MÃOZINHA*/
+    cursor: pointer; ||| MUDA O CURSOR DO MOUSE PARA A MÃOZINHA |||
 }
-input/*[type="text"]*/ { /* USANDO OS '["SELETOR DE ATRIBUTO"]' PODEMOS FORMATAR APENAS OS 'INPUT' QUE SEJAM DO TIPO 'TEXT'*/
+
+input|||[type="text"]||| { /* USANDO OS '["SELETOR DE ATRIBUTO"]' PODEMOS FORMATAR APENAS OS 'INPUT' QUE SEJAM DO TIPO 'TEXT'|||
     width: 20em;
 }
 
@@ -669,10 +674,111 @@ input.radio, input.checkbox, input.submit{
     margin-right: 0.5em;
 }
 
+************************************************************************/
+
+/*               | AULA 13  == ESTILIZANDO FORMULARIOS PARTE 2 
 
 
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #643d87 url(../Aula13_estilizando_formularios_2/00imagens/fundo.jpg) no-repeat top center;
+}
 
+#container{
+    width: 400px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px; ||| ARREDONDA A BORDA DA "DIV" |||
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
 
+#container img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input.email{
+    background-image: url(../Aula13_estilizando_formularios_2/00imagens/icone-usuario.png);
+}
+
+input.senha{
+    background-image: url(../Aula13_estilizando_formularios_2/00imagens/icone-cadeado.png);
+}
+
+input.submit{
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+    background: linear-gradient(to bottom, #faa600, #f68a00); ||| "linear-gradient" FAZ UM EFEITO DE DEGRADÊ |||
+}
+
+************************************************************************/
+
+/*               | AULA 14  == ARREDONDAMENTO COM IMAGENS 
+
+CONFIGURANDO CAIXA 1
+
+.caixa1{
+    width: 400px;
+    background: #dedede url(../Aula14_arredondamento_com_imagens/imagens/topo.png) no-repeat left top;
+}
+
+.caixa1 h2{
+    padding: 10px 20px 0 20px;
+}
+
+.caixa1 p{
+    background: url(../Aula14_arredondamento_com_imagens/imagens/baixo.png) no-repeat bottom;
+    padding: 0px 20px 20px 20px;
+}
+
+******************************************************************
+
+CONFIGURANDO CAIXA2
+
+.caixa2{
+    width: 400px;
+    background: #dedede url(../Aula14_arredondamento_com_imagens/imagens/fundo-arredondamento.png) repeat-y left top;
+}
+
+.caixa2 h2{
+    background: url(../Aula14_arredondamento_com_imagens/imagens/topo2.png) no-repeat left top;
+    padding: 10px 20px 0 20px;
+
+}
+
+.caixa2 p{
+    padding: 0 20px;
+    margin-bottom: 0;
+}
+
+.caixa2 .ultimo{
+    background: url(../Aula14_arredondamento_com_imagens/imagens/baixo2.png) no-repeat bottom;
+    width: 400px;
+    height: 24px;
+}
+
+************************************************************************/
 
 
 
