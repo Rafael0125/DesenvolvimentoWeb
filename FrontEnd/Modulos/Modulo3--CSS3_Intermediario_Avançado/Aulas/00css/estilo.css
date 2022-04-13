@@ -862,5 +862,69 @@ h3{
 
 ************************************************************************/
 
+/*               | AULA 16  == FONTES CUSTOMIZADAS */
+
+/*  EXPLICANDO COMO FUNCIONA O "@FONT-FACE"
+
+    Primeiro adicionamos a fonte usando: 
+    @font-face ||| COMANDO PARA ADICIONAR A FONTE{
+    font-family: ||| NOME DA FONTE QUE QUEREMOS ADICIONAR (PODEMOS COLOCAR O NOME QUE QUISERMOS, MAS É BOM USAR O NOME REAL DA FONTE);
+    src: url(); ||| LOCAL ONDE A FONTE ESTA SALVA PARA PODER SER CARREGADA    
+    }
+
+    Como adicionamos o fonte no sistema, não é necessario o usuario ter a fonte.
+
+*/
+
+
+
+
+@font-face { /* DESSA MANEIRA VIA CSS QUE RECONHECEMOS UMA FONTE CUSTOMIZADA  */
+    font-family: "Road Rage";
+    src: url(../Aula16_fonte_customizadas/fontes/RoadRage.woff);
+}
+
+@font-face {
+    font-family: "Ancient Medium";
+    src: url(../Aula16_fonte_customizadas/fontes/Ancient-Medium.woff);
+}
+
+@font-face {
+    font-family: "Bring Heart";
+    src: url(../Aula16_fonte_customizadas/fontes/BringHeart.woff);    
+}
+
+@font-face {
+    font-family: "Madelina Script";
+    src: url(../Aula16_fonte_customizadas/fontes/MadelinaScript.woff);
+}
+
+
+h1, h2, h3, h4{
+    font-size: 52px;
+    text-align: center;
+}
+
+h1{
+    font-family: "Road Rage";
+}
+
+h2{
+    font-family: "Ancient Medium";
+}
+
+h3{
+    font-family: "Bring Heart";
+}
+
+h4{
+    font-family: "Madelina Script";
+}
+ 
+
+
+
+
+
 
 
