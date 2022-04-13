@@ -1,0 +1,216 @@
+/*
+    FORMATAÇÃO DA ESTRUTURA GERAL
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff url(../imagens/bg.png);
+    margin: 15px;
+}
+
+#container{
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/*
+    FORMATAÇÃO DO TOPO
+*/
+
+#topo{
+    position: relative;
+    background: #dbcd87;
+    height: 15.4em; /* Usando a medida de "em" para que se ajuste ao conteudo*/
+    min-width: 250px;
+}
+
+#area-logo{
+    position:absolute;
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    width: 100%;
+    height: 245px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../imagens/logo.png) no-repeat ;
+    width: 151px;
+    height: 66px;
+    text-indent: -8000px;
+
+}
+
+#area-menu{
+    position:absolute;
+    background: blue;
+    width: 450px;
+    height: 245px;
+    top: 0;
+    right: 0;
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+    z-index: 2;
+
+}
+
+#conteudo-menu{    
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#menu-locais{
+    border-bottom: 1px solid #b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 0.7em;
+    color: #8b8448;
+
+}
+
+#menu-locais .locais{
+    float: left;
+    line-height: 2.1em;
+}
+
+a.reserva{
+    text-transform: uppercase;
+    background: #a29750;
+    color: #fff5b0;
+    padding: 5px 10px;
+    float: right;
+
+}
+
+/*
+    FORMATAÇÃO BARRA DE NAVEGAÇÃO VERTICAL 
+*/
+
+#menu{
+    margin-top: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul#navegacao{
+    float: left;
+}
+
+ul#navegacao a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+}
+
+ul#navegacao a:hover{
+    background: #fdf6be;
+}
+
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+/*
+    FORMATAÇÃO AREA DE CONTEUDO
+*/
+
+#area-principal{
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+
+#area-lateral{
+    width: 50%;
+    float: right;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#rodape{
+    clear:both;
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+
+}
+
+/*
+    FORMATAÇÕES DE TEXTOS
+*/
+
+h2{
+    color: #7b7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p{
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*
+    FORMATAÇÃO LISTA LATERAL DIREITA
+*/
+
+#lista-recursos li{
+    height: 6em;
+    height: 100px;
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb ;
+    margin: 5px 0;
+}
+
+#lista-recursos li:hover{
+    background: #f6f3d6;
+    cursor: pointer;
+}
+
+#lista-recursos li a h3{
+    background: url(../imagens/ornamento.png) no-repeat right;
+    color: #615b2d;
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+#lista-recursos li a img{
+    float: left;
+    margin-right: 8px;
+}
+
+#lista-recursos li a p{
+    font-size: 0.8em;
+    color: #000;
+}
+
