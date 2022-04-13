@@ -1,22 +1,71 @@
 /*
     Aula 01 -- Normalize CSS
-        Serve para deixar as configurações padrão para todos os browsers, fazendo a renderização dos arquivos de uma maneira melhor para cada browser.
+    Serve para padronizar configurações em browser diferentes;
+    O nomalize pode ser copiado online pesquisando "nomalize css" no Google e entrando no primeiro link
 */
 
+/*
+    Aula 02 -- Box Sizing & Cantos Arredondados
+    
+        Border-radius {
+            Define um arredondamento da caixa;
+            Podmeos usar para fazer o efeito de uma foto de perfil, que a foto fica redonda, como no intagram ou facebook;
+
+            O ideal para fazer o arredondamento de uma imagem é que ela tenha a mesma medida de altura e largura;
+
+            As medidas oodem ser declaradas da mesma maneira que uma margin ou padding,Exemplo:
+                        'border-radius: 10px 50px 80px 100px;' ou
+                        'border-radius: 20px 90px;';
+
+            Em algumas versões mais antigas de browser temos que usar 'prefixos' para que o navegador possa interpretar corretamente o border-radius;
+
+            Exemplos de prefixos:
+                            -webkit-border-radius: 20px 90px; **Prefixo para versões do Google Chome e Safari**
+                            -moz-border-radius: 20px 90px; **Prefixo para versões do Mozila Firefox**
+
+            Link para a definição do border-radius:
+                'https://www.w3schools.com/cssref/css3_pr_border-radius.asp'
+        }
+
+        box-sizing: border-box;{
+            Usando o "box-sizing" com o valor "border-box;" ele mantem o tamanho da caixa definido, então quando adcionarmos um "padding" o tamanho da caixa não será alterado por exemplo;
+
+            O "box-sizing" também é uma propriedade relativamente nova, então algumas vaezes sera necessario usar os prefixos:
+                    -webkit-box-sizing: border-box;**Prefixo para versões do Google Chome e Safari**
+                    -moz-box-sizing: border-box;**Prefixo para versões do Mozila Firefox**
+
+        }
 
 
 
+*/
 
+#aula02 #caixa{ /* Exemplo de caixa sem 'box-sizing' */
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 380px;  
+    border-radius: 10px 50px 80px 100px; 
+    border-radius: 20px 90px;
 
+}
 
+#aula02 #caixa2{ /* Exemplo de caixa com 'box-sizing' */
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+    margin: 25px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 380px;  
+    border-radius: 10px 50px 80px 100px; 
+    border-radius: 20px 90px;
 
-
-
-
-
-
-
-
+}
 
 
 
