@@ -111,7 +111,7 @@
 
     width: 300px;
     height: 300px;
-    background: radial-gradient(red, yellow, green, blue);
+    background: radial-gradient(black, black, red, red,black,black,black);
     /*background: linear-gradient(to top, red, yellow, green, blue);
     background: url(../Aula03_degrades_transparencias/imagens/camera.png);
     opacity: 0.5;  para deixar a imagem opaca*/
@@ -127,3 +127,182 @@
 }
 
 /**************************************** Aula 03 -- FIM ****************************************/
+
+/***************************************  Aula 04 -- Sombras
+    Sombras{
+                text-shadow: 20px 20px black ;
+                    Podemos movimentar que nem um padding, por exemplo;
+                    Usado para aplicar uma sombra em um texto;
+                    O primeiro parametro movimenta a sombra na horizontal;
+
+                    O segundo parametro movimenta a na vertical;
+
+                    O terceiro parametro aplicar um "BLUR", que é um borrado na sombra;
+
+                    O ultimo parametro é a cor da sombra, podendo ser definido com o nome das cores, um código exadecimal, um RGB e um RGBA, sendo possivel aplicar a opacidade na sombra.
+
+                    Ela se comporta como um background então não afeta os elementos de texto;
+
+                    Podemos tambem aplicar uma sombra direto em uma div usando o "box-shadow: 20px 20px 6px black;"
+
+                    Seguindo os mesmo parametros explicados a cima;
+
+                    No box-shadow temos um quarto parametro chamado "SPREAD" que é o espalhamento da sombra para aplicar um tamanho na sombra, exemplo:
+                            box-shadow: 20px 20px 2px 20px black;
+    }
+
+*/
+#aula04 #caixa{
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow: 40px 200px 2px 10px  black;
+}
+
+#aula04 #caixa h1{
+    color: white;
+    text-shadow: 20px 20px 2px rgba(255, 0, 0, 0.6) ;
+
+
+}
+
+/**************************************** Aula 04 -- FIM ****************************************/
+
+/***************************************  Aula 05 -- Animações{
+    Animações em CSS são possibilidades de a partir de determinadas formatações ir para outra formatação;
+
+    Para usar animações temos que fazer algumas formatações:
+        @keyframes animacao-caixa == Para identificar que estamos criando uma animação e colocamos o nome para a animação assim como colocamos o nome para formatar uma propriedade CSS;
+
+        Então criamos a animação separada e usamos dentro do nosso identificador da caixa como uma propriedade CSS
+
+        @keyframes animacao-caixa{
+            from{} 'Estilo Inicial'
+            to{} 'Estilo Final'
+        }
+
+        Então aplicamos a animação como uma propriedade usando o 
+            animation-name: animacao-caixa;
+
+        E aplicamos o tempo de duração da animação usando o 
+                animation-duration: 5s;
+
+        Podemos aplicar outras propriedades nas animações como por exemplo
+            border-radius:30px;
+
+        Usando o "animation-delay: 3s;" direto no elemento CSS podemos aplicar um delay de tempo na animação;
+
+        Podemos fazer a animação ser execultada mais de uma vez com o
+            "animation-iteration-count: 5;"  Sendo o valor o numero de vezes que ela repetirá;
+
+        Podemos tambem alterar a direção da animação com o 
+            animation-direction: alternate;
+
+        Assim como o background podemos alinhar todas essas formatações dentro de uma unica propriedade:
+            "animation: (NOME-DA-ANIMAÇÃO) (DURAÇÃO DA ANIMAÇÃO) (DELAY DA ANIMAÇÃO) (QUANTIDADE DE EXECUÇÕES DA ANIMAÇÃO) (A DIREÇÃO DA ANIMAÇÃO) ;"
+                animation: animacao-caixa 5s 3s 5 alternate;
+
+        Podemos movimentar a div usando a animação, declarando a posição da div como relativa e aplicando a movimetação na formatação da animação
+
+
+        Podemos tambem colocar para mudar durante a animação
+
+
+    }
+*/
+
+
+/*Para a animação funcionar direito nos browsers é preciso usar prefixos
+
+@-webkit-keyframes animacao-caixa{
+    from{
+        background: red;
+
+    } 
+    to{
+        background: green;
+    }
+
+}
+@-moz-keyframes animacao-caixa{
+    from{
+        background: red;
+
+    } 
+    to{
+        background: green;
+    }
+
+}
+@-o-keyframes animacao-caixa{
+    from{
+        background: red;
+
+    } 
+    to{
+        background: green;
+    }
+
+}*/
+@keyframes animacao-caixa{
+    from{
+        background: red;
+        border-radius: 0px;
+        box-shadow: 40px 200px 0px 10px  green; 
+        top: 0;
+        left: 0;
+    } 
+    to{
+        background: green;
+        border-radius: 300px;
+        box-shadow: 40px 200px 20px 10px  red;
+        top: 200px;
+        left: 200px;
+    }
+
+}
+
+#aula05 #caixa{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /*animation-name: animacao-caixa;
+    animation-duration: 1s;
+    animation-delay: 0s; 
+    animation-iteration-count: 5;
+    animation-direction: alternate;*/
+    animation: animacao-caixa 5s 0s 5 alternate;
+}
+#aula05 #caixa2{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: relative;
+    /*animation-name: animacao-caixa;
+    animation-duration: 1s;
+    animation-delay: 0s; 
+    animation-iteration-count: 5;
+    animation-direction: alternate;*/
+    animation: animacao-caixa 5s 0s 5 alternate;
+}
+
+
+
+/**************************************** Aula 05 -- FIM ****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
