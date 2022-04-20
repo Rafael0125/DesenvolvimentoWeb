@@ -214,7 +214,7 @@
 */
 
 
-/*Para a animação funcionar direito nos browsers é preciso usar prefixos
+/* Para a animação funcionar direito nos browsers é preciso usar prefixos
 
 @-webkit-keyframes animacao-caixa{
     from{
@@ -295,10 +295,44 @@
 
 /**************************************** Aula 05 -- FIM ****************************************/
 
+/***************************************  Aula 06 -- Transições
+    Para fazer transições usamos a propriedade "transition:;" dentro do HOVER do elemento que queremos mudar colocando o valor que queremos mudar e o tempo, por exemplo:
+        transition: width 3s ;
 
+    Podemos tambem declarar mais de uma mudança no transition com por exemplo:
+        transition: width 3s, background 3s ;
 
+    É possivel tambem inserir as mudanças que queremos no hover e usar apenas uma unica formatação de transition por exemplo:
+        #aula06 #caixa:hover{
+            width: 400px;
+            background: red;
+            transition: all 3s;
+        }
 
+    Assim faremos todas as formatações do hover em 3 segundos.
 
+    Para fazer o efeito de transição o recomendado é usar os prefixos:
+        -webkit-transition: ;
+        -moz-transition: ;
+        -o-transition: ;
+
+*/
+
+#aula06 #caixa{
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+
+#aula06 #caixa:hover{
+    width: 400px;
+    background: red;
+    /*transition: width 3s, background 3s ;*/
+    transition: all 3s;
+
+}
+
+/**************************************** Aula 06 -- FIM ****************************************/
 
 
 
