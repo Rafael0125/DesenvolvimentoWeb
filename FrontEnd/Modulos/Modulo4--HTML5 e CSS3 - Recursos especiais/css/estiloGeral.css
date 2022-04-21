@@ -533,21 +533,22 @@
 
 #aulaFlexbox #conteudo{
     background: #dcdcdc;
-    height: 400px;
+    height: 1000px;
     display: flex;
-    /*flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction:column;/*
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items:baseline;*/
 }
 
 #aulaFlexbox .item{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background: white;
     border: 1px solid gray;
     margin: 10px;
-    flex-basis: 100px;
+    /*flex-basis: 100px;*/
 }
 /*
 #aulaFlexbox .ordem1{
@@ -567,18 +568,31 @@
 }*/
 
 #aulaFlexbox .item1{
-    /*flex-grow: 1;
-    flex-shrink: 2;*/
+    flex-grow: 4;
+    flex-shrink:  1;
 }
 
 #aulaFlexbox .item2{
-    /*flex-grow: 2;
-    flex-shrink: 6;*/
+    flex-grow: 2;
+    flex-shrink: 1;
 }
 #aulaFlexbox .item3{
-    /*flex-grow: 2;
-    flex-shrink: 6;*/
+    flex-grow: 1;
+    flex-shrink: 2;
 }
+#aulaFlexbox .item4{
+    flex-grow: 4;
+    flex-shrink: 3;
+}
+
+
+
+
+
+
+
+
+
 
 
 
