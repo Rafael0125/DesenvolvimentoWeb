@@ -456,60 +456,131 @@
 
 /**************************************** Aula 09 -- FIM ****************************************/
 
-/***************************************  Aula 11 -- Flexbox
-A propriedade Flex Box permite que se dispõem elementos em um contêiner de maneira muito mais simples e poderosa permite que você deixe os seus slides muito mais flexíveis
-Quando você utiliza a propriedade Flex Box você passa a ter um contêiner e dentro dele nós temos Flex itens que são itens dentro desse contêiner que você utiliza a propriedade Flex box.
+/***************************************  Aula 11 até aula 13 -- Flexbox*/
 
-    Podemos aplicar o "display: flex;" // Para definir o display nos elementos
+/* Aula 11 - Flexbox container
+    A propriedade Flex Box permite que se dispõem elementos em um contêiner de maneira muito mais simples e poderosa permite que você deixe os seus slides muito mais flexíveis
+    Quando você utiliza a propriedade Flex Box você passa a ter um contêiner e dentro dele nós temos Flex itens que são itens dentro desse contêiner que você utiliza a propriedade Flex box.
 
-    Usamos o "flex-direction:;" para aplicar o posicionamento e direção do flex, seus valores são:
+        Podemos aplicar o "display: flex;" // Para definir o display nos elementos
 
-        flex-direction: row; // Posicionamento normal dos itens;
-        flex-direction: row-reverse; // Posicionamento reverso dos itens, começa pelo ultimo item;
-        flex-direction: column; // Posiciona os itens em colunas;
-        flex-direction: column-reverse; // Posiciona os itens em colunas na ordem reversa;
+        Usamos o "flex-direction:;" para aplicar o posicionamento e direção do flex, seus valores são:
 
-    Temos a propriedade "flex-wrap: ;" para definir quebras de layout, seus valores são:
+            flex-direction: row; // Posicionamento normal dos itens;
+            flex-direction: row-reverse; // Posicionamento reverso dos itens, começa pelo ultimo item;
+            flex-direction: column; // Posiciona os itens em colunas;
+            flex-direction: column-reverse; // Posiciona os itens em colunas na ordem reversa;
 
-    flex-wrap: nowrap; // Não terá quebra de layout;
-    flex-wrap: wrap; // Terá quebra de layout;
-    flex-wrap: wrap-reverse; // Terá quebra de layout reverso;
+        Temos a propriedade "flex-wrap: ;" para definir quebras de layout, seus valores são:
 
-    Podemos usar a propriedade justify-content:; para definir o posicionamento das caixas flex na horizontal, seus valores são:
+        flex-wrap: nowrap; // Não terá quebra de layout;
+        flex-wrap: wrap; // Terá quebra de layout;
+        flex-wrap: wrap-reverse; // Terá quebra de layout reverso;
 
-        justify-content: flex-start; // Fica na posição inicial;
-        justify-content: flex-end; // Ajusta os itens no final da pagina;
-        justify-content: center; // Ajusta os itens no centro da página;
-        justify-content: space-between; // Distribui os itens colocando um espaçamento entre eles, ajustando o espaço entre eles para ser igual em todos, deixando os itens nas extremidades colados nas laterais;
-        justify-content: space-around; // Distribui os itens colocando um espaçamento entre eles, ajustando o espaço entre eles para ser igual em todos, deixando os itens nas extremidades afastados das laterais;
+        Podemos usar a propriedade justify-content:; para definir o posicionamento das caixas flex na horizontal, seus valores são:
 
-    Temos tambem a propriedade "align-items:;" na vertical, seus valores são:
+            justify-content: flex-start; // Fica na posição inicial;
+            justify-content: flex-end; // Ajusta os itens no final da pagina;
+            justify-content: center; // Ajusta os itens no centro da página;
+            justify-content: space-between; // Distribui os itens colocando um espaçamento entre eles, ajustando o espaço entre eles para ser igual em todos, deixando os itens nas extremidades colados nas laterais;
+            justify-content: space-around; // Distribui os itens colocando um espaçamento entre eles, ajustando o espaço entre eles para ser igual em todos, deixando os itens nas extremidades afastados das laterais;
 
-        align-items:stretch; // Valor padrão no qual os itens ficam esticados;
-        align-items:center; // Posiciona os itens ao centro da página;
-        align-items:flex-start; // Os itens ficam posicionados na parte superior
-        align-items:flex-end; // Os itens ficam posicionados na parte inferior
-        align-items:baseline; // Posiciona os itens alinhados com o texto da parte de cima dos itens
+        Temos tambem a propriedade "align-items:;" na vertical, seus valores são:
 
+            align-items:stretch; // Valor padrão no qual os itens ficam esticados;
+            align-items:center; // Posiciona os itens ao centro da página;
+            align-items:flex-start; // Os itens ficam posicionados na parte superior
+            align-items:flex-end; // Os itens ficam posicionados na parte inferior
+            align-items:baseline; // Posiciona os itens alinhados com o texto da parte de cima dos itens
+*/
+/* Aula 12 - Flexbox Itens - parte 1
+    O Flexbox falicita e muito na disposição da página, pois não temos que usar o float e margin para alinhar os itens da página;
 
+    Para ordenar os itens podemos criar classes, que no exemplo esta como ".ordem1" até ".ordem4" e assim coloca-las nos itens para alterar a posição delas na página usando a propriedade "order: 1;" para fazer essa configuração, exemplo:
+
+        #aulaFlexbox .ordem1{
+            order: 1;
+        }
+        #aulaFlexbox .ordem2{
+            order: 2;
+        }
+
+    Assim aplicando essas classes nos itens da página podemos formatar a posição deles;
+    Por padrão o valor de posição dos elementos é 0;
+    Podemos usar numeros negativos para posicionar os itens;
+
+    flex-grow:; //Define a proporção de espaço ocupado por um item;
+        Colocando o valor de flex-grow: 1; em apenas um item ele ocupará todo o espaço disponivel no container;
+        E apenas o item com o valor um será reduzido quando diminuirmos o espaço da página;
+        Se colocar em todos os itens eles se ajustam em relação ao container;
+        Se aplicarmos um valor maior ele pasará a ocupar mais espaço;
+        Então basicamente esse número ele define um valor proporcional que o seu item vai ocupar com relação aos outros itens;
+        Se reduzirmos o tamanho da página eles se ajeitam proporcionalmente;
+
+*/
+/* Aula 13 - Flexbox Itens - parte 2
+    Podemos definir a capacidade de redução dos itens usando o :
+        "flex-shrink:;"
+        Por padrão os itens estão com o "flex-shrink:1;"
+        Quanto maior o numero no flex-shrink, o item ficará menor, então um item com 'flex-shrink: 6;' ficará menor do que um item com 'flex-shrink: 2;' por exemplo;
+
+    Para indicar o tamanho inicial do flex item antes da distribuição do espaço restante, usamos:
+        "flex-basis:;" 
+        O valor padrão é "auto" que define que o tamanho inicial dos itens é automatico
 
 */
 
-#aula11 #conteudo{
+
+#aulaFlexbox #conteudo{
     background: #dcdcdc;
     height: 400px;
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items:baseline;
+    align-items:baseline;*/
 }
 
-#aula11 .item{
+#aulaFlexbox .item{
+    width: 200px;
+    height: 200px;
     background: white;
     border: 1px solid gray;
     margin: 10px;
-
+    flex-basis: 100px;
+}
+/*
+#aulaFlexbox .ordem1{
+    order: 1;
 }
 
-/**************************************** Aula 11 -- FIM ****************************************/
+#aulaFlexbox .ordem2{
+    order: 2;
+}
+
+#aulaFlexbox .ordem3{
+    order: 3;
+}
+
+#aulaFlexbox .ordem4{
+    order: 4;
+}*/
+
+#aulaFlexbox .item1{
+    /*flex-grow: 1;
+    flex-shrink: 2;*/
+}
+
+#aulaFlexbox .item2{
+    /*flex-grow: 2;
+    flex-shrink: 6;*/
+}
+#aulaFlexbox .item3{
+    /*flex-grow: 2;
+    flex-shrink: 6;*/
+}
+
+
+
+
+/**************************************** Aula 11 à 13 -- FIM ****************************************/
