@@ -213,7 +213,6 @@
     }
 */
 
-
 /* Para a animação funcionar direito nos browsers é preciso usar prefixos
 
 @-webkit-keyframes animacao-caixa{
@@ -261,7 +260,6 @@
         top: 200px;
         left: 200px;
     }
-
 }
 
 #aula05 #caixa{
@@ -277,6 +275,7 @@
     animation-direction: alternate;*/
     animation: animacao-caixa 5s 0s 5 alternate;
 }
+
 #aula05 #caixa2{
     margin: 20px;
     width: 300px;
@@ -290,8 +289,6 @@
     animation-direction: alternate;*/
     animation: animacao-caixa 5s 0s 5 alternate;
 }
-
-
 
 /**************************************** Aula 05 -- FIM ****************************************/
 
@@ -329,14 +326,190 @@
     background: red;
     /*transition: width 3s, background 3s ;*/
     transition: all 3s;
-
 }
 
 /**************************************** Aula 06 -- FIM ****************************************/
 
+/***************************************  Aula 07 - Aula 08 -- Novas tag's HTML5 */
+
+/*Aula 07 HEADER, NAV, FOOTER{
+    Para facilitar a leitura dos sites foram criadas novas Tag's no html5
+        Podemos separar as páginas web com div exemplo:
+
+            <div id="cabecalho">  Para o cabeçalho da página
+            <div id="navegacao">  Para a navegação da página
+            <div id="rodape">     Para o rodapé da página
+        Porem leitores de páginas web não identificam os id's como as partes que decidimos que eles sejam na página então foram criadas tag's para identificar quais partes da página estamos nos referindo com por exemplo:
+
+            1ª <header> Para o cabeçalho da página, exemplo:
+                <header>
+                    <h1>Logo</h1>
+                    <p>
+                        Meu site
+                    </p>
+                </header>
+
+            2ª <nav> Para a navegação da pagina, exemplo:
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            3ª <footer> Para o rodapé da pagina, exemplo:
+                <footer>
+                    <p>&copy; 2022 - Rafael Navarro</p>
+                </footer>
+
+        Então podemos formatar as tag's diretamente no CSS, sem ter a necessidade de usar id's
+}*/
+
+/*Aula 08 ARTICLE, SECTION, ASIDE, TIME{
+    Para fazer os conteudos da pagina, como uma postagem por exemplo podemos usar:
+        <div id="postagem">
+    Que foi substituido pela nova tag <article>
+    Dentro do article podemos criar seções usando a tag <section>, exemplo:
+
+        <article>//1º ARTICLE
+            <h3>Novos Cursos</h3>
+            <section> // 1ªSECTION //
+                <h4>Curso de Programação</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis, ipsam debitis saepe consequatur nostrum modi repellendus voluptas praesentium fuga eaque qui ipsum ullam ea expedita omnis provident quos fugiat.
+                </p>
+                <span> Atualizado em :20/04/2022</span>
+            </section>
+
+            <section> // 2ªSECTION //
+                <h4>Curso de Graficos</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis, ipsam debitis saepe consequatur nostrum modi repellendus voluptas praesentium fuga eaque qui ipsum ullam ea expedita omnis provident quos fugiat.
+                </p>
+            </section>
+        </article>
+    
+    Podemos formatar as tag's normalmente usando o CSS
+
+    Temos tambem uma nova tag para fazer uma definição de datas para estruturar melhor os conteudos assim como as outras Tag's
+            <time>20/04/2022</time>
+
+    Para criar conteudos laterais foi criado a tag <aside> para separar em um campo diferente do <article>
+
+}*/
+
+
+#aula07_Aula08 header{
+    border: 1px solid #ccc;
+    background: rgb(248, 233, 233);
+    padding: 5px;
+}
+
+#aula07_Aula08 nav{
+    border: 1px solid red;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+#aula07_Aula08 footer{
+    text-align: center;
+    background: #ccc;
+}
+
+#aula07_Aula08 article{
+    background: orange;
+}
+
+#aula07_Aula08 section{
+    border: 1px dotted #fff;
+    padding: 10px;
+}
+
+#aula07_Aula08 aside{
+    background: blue;
+}
+
+/**************************************** Aula 07 E 08 -- FIM ****************************************/
+
+/***************************************  Aula 09 -- Compatibilidade Html5
+    Essas novas tag's podem trazer alguns problemas com navegadores mais antigos que podem não interpretar corretamente essas tag's novas como por exemplo o internet explorer, e como isso foi um problema para muitos desenvolvedores foram criadas ferramentas para corrigir esse erro:
+
+    Html Shiv pode ser localizado pesquisando no google
+
+    <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+
+    Com essas linhas de código conseguimos fazer o internet explorer interpretar corretamente as novas Tag's;
+
+    Usando o arquivo copiado online ou usando o proprio link do html shiv podemos inclur essa formatação no nosso código, eu usei o arquivo que esta dentro da pasta "js" para incluir o Shiv;
+    Com isso as tag's podem ser interpretadas corretamente em versões anteriores antigas do internet explorer.
+
+*/
+
+/**************************************** Aula 09 -- FIM ****************************************/
+
+/***************************************  Aula 11 -- Flexbox
+A propriedade Flex Box permite que se dispõem elementos em um contêiner de maneira muito mais simples e poderosa permite que você deixe os seus slides muito mais flexíveis
+Quando você utiliza a propriedade Flex Box você passa a ter um contêiner e dentro dele nós temos Flex itens que são itens dentro desse contêiner que você utiliza a propriedade Flex box.
+
+    Podemos aplicar o "display: flex;" // Para definir o display nos elementos
+
+    Usamos o "flex-direction:;" para aplicar o posicionamento e direção do flex, seus valores são:
+
+        flex-direction: row; // Posicionamento normal dos itens;
+        flex-direction: row-reverse; // Posicionamento reverso dos itens, começa pelo ultimo item;
+        flex-direction: column; // Posiciona os itens em colunas;
+        flex-direction: column-reverse; // Posiciona os itens em colunas na ordem reversa;
+
+    Temos a propriedade "flex-wrap: ;" para definir quebras de layout, seus valores são:
+
+    flex-wrap: nowrap; // Não terá quebra de layout;
+    flex-wrap: wrap; // Terá quebra de layout;
+    flex-wrap: wrap-reverse; // Terá quebra de layout reverso;
+
+    Podemos usar a propriedade justify-content:; para definir o posicionamento das caixas flex na horizontal, seus valores são:
+
+        justify-content: flex-start; // Fica na posição inicial;
+        justify-content: flex-end; // Ajusta os itens no final da pagina;
+        justify-content: center; // Ajusta os itens no centro da página;
+        justify-content: space-between; // Distribui os itens colocando um espaçamento entre eles, ajustando o espaço entre eles para ser igual em todos, deixando os itens nas extremidades colados nas laterais;
+        justify-content: space-around; // Distribui os itens colocando um espaçamento entre eles, ajustando o espaço entre eles para ser igual em todos, deixando os itens nas extremidades afastados das laterais;
+
+    Temos tambem a propriedade "align-items:;" na vertical, seus valores são:
+
+        align-items:stretch; // Valor padrão no qual os itens ficam esticados;
+        align-items:center; // Posiciona os itens ao centro da página;
+        align-items:flex-start; // Os itens ficam posicionados na parte superior
+        align-items:flex-end; // Os itens ficam posicionados na parte inferior
+        align-items:baseline; // Posiciona os itens alinhados com o texto da parte de cima dos itens
 
 
 
+*/
 
+#aula11 #conteudo{
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items:baseline;
+}
 
+#aula11 .item{
+    background: white;
+    border: 1px solid gray;
+    margin: 10px;
 
+}
+
+/**************************************** Aula 11 -- FIM ****************************************/
