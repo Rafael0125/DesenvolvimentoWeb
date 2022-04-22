@@ -4,8 +4,7 @@
 
 body{
     background: #f4f2ec url(../imagens/fundo.png) repeat-x;
-    font: 12px 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font: 12px 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
 #container{
@@ -79,7 +78,6 @@ nav ul li a:hover{
     width: 710px;
     float: left;
     margin-bottom: 20px;
-
 }
 
 aside{
@@ -118,23 +116,24 @@ article#video{
     width: 310px;
     margin-left: 25px;
 }
+
 article#mapa{
     float: left;
     width: 310px;
     margin-left: 37px;
 }
+
 article#exposicoes{
     float: left;
     width: 310px;
     margin: 15px 0 0 25px;
 }
+
 article#historia{
     float: left;
     width: 310px;
     margin: 15px 0 0 37px;
-
 }
-
 
 h4{
     color: #86521a;
@@ -166,9 +165,6 @@ footer>p a{
     padding: 2px 10px;
 }
 
-
-
-
 /*
     Formularios
 */
@@ -184,6 +180,7 @@ input{
 input.campo{
     border: 1px solid #ada484;
 }
+
 input.botao{
     background: #9b9271;
     color: white;
