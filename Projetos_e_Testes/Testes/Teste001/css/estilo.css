@@ -1,0 +1,144 @@
+/*
+    FORMATAÇÕES GERAIS
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+
+}
+
+/*
+    FORMATAÇÕES DO MENU LATERAL
+*/
+
+#menu-lateral {
+    background-color: #696969;
+    background-image: url(../imagens/fundo_Esquerdo.png) ;
+    float: left;
+    position: fixed;
+    display: block;
+    width: 65px;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    list-style: none;
+    padding: 15px 10px ;
+    line-height: 30px;
+    background-size:cover;
+
+
+}
+
+#menu-lateral li{
+    margin-top: 20px;
+    padding: 10px 0px ;
+}
+
+#menu-lateral li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menu-lateral:hover{
+    width: 100px;
+
+}
+#menu-lateral li a:hover{
+    background-color: #D3D3D3;    
+    color: #000;
+    margin-left: 20px;
+    display: block;
+}
+
+/*
+    Formatações do backgroud e o efeito parallax
+*/
+
+.conteudo{
+    color: white;
+    background-color: rgb(110, 107, 107);
+    text-align: justify;
+    
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5{
+    height: 100%;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* PARA FIXAR A IMAGEM */
+    position: relative;  
+}
+
+
+
+.caixa1{
+    background-image: url(../imagens/pico.jpg);
+
+}
+.caixa2{
+    background-image: url(../imagens/lago.png);
+
+}
+.caixa3{
+    background-image: url(../imagens/montanha.png);
+
+}
+.caixa4{
+    background-image: url(../imagens/castelo.png);
+
+}
+.caixa5{
+    background-image: url(../imagens/cidade.png);
+
+}
+
+/*
+    Formatações dos conteudos da pagina
+*/
+
+.conteudo{
+    color: white;
+    background: #696969 url(../imagens/fundo_editado.png);
+    background-size: cover;
+    height: 200px;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.caixa-conteudo{
+    color: #fff;
+    width: 80%;
+    margin:  auto;
+    height: 180px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
