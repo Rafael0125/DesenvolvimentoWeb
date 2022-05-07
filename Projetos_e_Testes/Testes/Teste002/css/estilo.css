@@ -1,39 +1,144 @@
 /*
-    Um novo projeto de site :
-        páginas com 3 colunas de conteudo;
-        páginas com 2 colunas de conteudo;
-        páginas com 1 coluna de conteudo;
-        todas com um menu superior.
-        Usando um layout liquido.
-*/
-/*
     Formatações Gerais
 */
+
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background: rgba(206, 201, 201, 0.466) url(../imagens/background-body.jpg) no-repeat ;
+    background-size: cover;
+}
+
+/*
+    Formatação de fontes
+*/
+
+@font-face {
+    font-family: "malvie";
+    src: url(../fontes/MalvieTrial-Regular.woff);
+}
+@font-face {
+    font-family: "cocogoose";
+    src: url(../fontes/Cocogoose.woff);
+}
+
+
+
+
+
+/*
+    Formatação do container principal
+*/
+
+#container-principal{
+    margin: 2em auto;
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    background-image: url(../imagens/body-inferior.png);
 }
 
 /*
     Formatação do menu superior
 */
 
-#menu-superior {
-    border: 1px solid green;
+#menu-superior{
+    background: white;    
     width: 100%;
-    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px 15px 0 0 ;
     float: left;
+
 }
 
-#menu-superior ul li{
-    border: 1px solid red;
-    display: block;
-    float: right;
-    padding: 10px;
+#menu-superior h1, p{
+    padding-left: 35px;
+    padding-top: 5px;
+}
+
+#menu-superior h1{
+    font-size: 28px;
+    font-family: cocogoose;
+    color: rgb(69, 150, 123);
+    margin-top: 5px;
     
+}
+
+#primeiro-paragrafo{
+    font-size: 18px;
+    color: white;
+}
+
+#menu-superior p{
+    color: gray;
+}
+
+#ultimo-paragrafo{
+    padding-bottom: 25px;
+}
+
+/*
+    Formatação do menu inferior
+*/
+
+#menu-inferior{
+    padding: 0 25px;
+    clear: both;
+}
+
+/*
+    Formatação do Quadrado esquerdo
+*/
+
+#quadrado-esquerdo{
+    float: left;
+    width: 49.7%;
+    margin-top: 10px;
 
 }
 
+.conteudo-interno{
+    margin: 20px auto;
+    width: 80%;
+    color: white;
+}
+
+#preco{
+    line-height: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+#valor{
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#texto-valor{
+    margin-left: 15px;
+    height: 32px;
+    position: relative;
+    bottom: 7px;
+    font-family: malvie;
+}
+
+/*
+    Formatação do Quadrado direito
+*/
+
+#quadrado-direito{
+    float: right;
+    width: 49.7%;
+    margin-top: 10px;
+}
+
+
+#quadrado-direito p{
+    padding: 5px;
+}
 
 
 
