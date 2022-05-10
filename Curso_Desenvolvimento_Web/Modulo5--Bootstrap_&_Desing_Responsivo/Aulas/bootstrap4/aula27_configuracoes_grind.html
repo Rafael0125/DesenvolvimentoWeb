@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+
+        <title> Bootstrap - Configurações Grind </title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+
+        <!-- Iconic CSS -->
+        <link href="../bootstrap4/iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+        <style type="text/css">
+            .marcador{
+                background: #fe9d9d;
+                border: 1px solid #f94646;
+                
+            }
+
+            .marcador-container{
+                background: #5bf946;
+                border: 1px solid #36ae26;
+                
+            }
+
+        </style>
+
+    </head>
+
+    <body >
+        <div class="container marcador-container">
+            <h2>Largura Fixa</h2>
+            <!--
+                Podemos ter dois tipos de containers um que centraliza os conteudos na tela "container" e outro que ocupa todo o body "container-fluid";
+
+                Cada vez que eu crio uma nova "row" eu posso utilizar um grid com 12 colunas dentro dela;
+            -->
+            <div class="row ">
+                <div class="marcador col ">
+                    Area 1
+                </div>
+                <div class="marcador col">
+                    Area 2
+                </div>
+                <div class="marcador col">
+                    Area 3
+                </div>
+                <div class="marcador col">
+                    Area 4
+                </div>
+            </div>
+
+            <br><br>
+
+            <h2>Largura Automatica (auto-layout)</h2>
+            <div class="row ">
+                <div class="marcador col ">
+                    Area 1
+                </div>
+                <div class="marcador col">
+                    Area 2
+                </div>
+                <div class="marcador col-6">
+                    Area 3
+                </div>
+            </div>
+            <br><br>
+            
+            <h2>Largura Igual Empilhada</h2>
+            <div class="row ">
+                <div class="marcador col-sm ">
+                    Area 1
+                </div>
+                <div class="marcador col-sm">
+                    Area 2
+                </div>
+                <div class="marcador col-sm">
+                    Area 3
+                </div>
+            </div>            
+            <br><br>
+
+            <h2>Ordenando</h2>
+            <div class="row ">
+                <div class="marcador col-md-4 order-2">
+                    Area 1
+                </div>
+                <div class="marcador col-md-4 order-3">
+                    Area 2
+                </div>
+                <div class="marcador col-md-4 order-1">
+                    Area 3
+                </div>
+            </div>   
+            <br><br>
+
+            <h2>Offset</h2>
+            <div class="row ">
+                <div class="marcador col-md-6 offset-md-3">
+                    Login
+                </div>
+            
+            </div>
+            <br><br>
+
+            <h2>Offset Múltiplos Alinhamentos </h2>
+            <div class="row ">
+                <div class="marcador col-md-3 ">
+                    Conteudo 1
+                </div>
+                <div class="marcador col-md-3 offset-md-6">
+                    Conteudo 2
+                </div>
+            
+            </div>
+            <br><br>
+
+            <h2>Alinhamentos</h2>
+            <div class="row">
+                <div class="col-md-6 border border-dark offset-md-3">
+                    <h5>Row Principal</h5>
+                    
+                    <div class="row col-md-10 border border-danger"> 
+                        Row secundaria #1
+                        <div class="row">
+                            <div class="marcador col-md-6  ">
+                                Conteudo 1
+                            </div>
+                            <div class="marcador col-md-6 ">
+                                Conteudo 2
+                            </div>
+                            <div class="marcador col-md-12 ">
+                                Conteudo 3
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <br><br>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="../bootstrap4/js/bootstrap.min.js"></script>
+    </body>
+</html>
